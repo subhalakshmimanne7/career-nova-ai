@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Backend (Flask)",
+      "type": "shell",
+      "command": "py app.py",
+      "options": {
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "group": "career-nova",
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Run Frontend (Vite React)",
+      "type": "shell",
+      "command": "cmd.exe /c \"set PATH=C:\\Program Files\\nodejs;%PATH% && npm run dev\"",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "group": "career-nova",
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}
